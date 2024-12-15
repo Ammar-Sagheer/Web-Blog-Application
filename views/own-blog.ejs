@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+<!-- Main starts here -->
+<%if (locals.BlogText && locals.BlogTitle || locals.BlogNumber){%>
+<div class="grid-container">
+  <div class="grid-item">
+    <%for (var i=0; i < BlogNumber+1 ; i++){%>
+    <div class="text-lg-start">
+      <h1 class="display-5 fw-bold text-body-emphasis"><%= BlogTitle[i] %></h1>
+      <div class="col-lg-10">
+        <p class="lead text-lg-start"><%= BlogText[i] %></p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img
+        class="d-block mb-4"
+        src="images/cat.jpeg"
+        alt=""
+        width="250"
+        height="250"
+      />
+    </div>
+    <%}%>
+    <div class="grid-item">
+      <form action="/delete" method="POST">
+        <label
+          for="currentBlog"
+          name="delete1"
+          value="<%= BlogNumber %>"
+        ></label>
+        <input type="submit" value="<%= BlogNumber %>" name="delete" />
+      </form>
+    </div>
+  </div>
+  <%}else{%>
+  <h1 id="own-blog-heading">Sorry! No Blogs to Display</h1>
+  <%}%>
+  <!-- Main ends here -->
+  <%- include('partials/footer.ejs') %>
+</div>

@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs') %>
+<!-- Hero heading section start -->
+<!-- grid try -->
+<!-- Main starts here -->
+
+<div class="grid-container">
+  <div class="grid-item">
+    <div class="text-lg-start">
+      <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+      <div class="col-lg-10">
+        <p class="lead text-lg-start">
+          Choose your heading for the Blog, we are here to get you started fast!
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+            <a class="nav-link" href="/create"
+              ><i class="far fa-clone"></i> Create Your Blog!</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <img
+      class="d-block mx-auto mb-4"
+      src="images/cat.jpeg"
+      alt=""
+      width="500"
+      height="500"
+    />
+  </div>
+</div>
+
+<!-- Hero heading section end -->
+<!-- <div class="container">
+  <form action="/submit" method="POST">
+    <label for="fName">First Name</label> <br />
+    <input type="text" id="fName" name="fName" /> <br />
+    <label for="lName">Last Name</label> <br />
+    <input type="text" id="lName" name="lName" /> <br />
+    <input type="submit" value="Submit form" />
+  </form>
+  <%if (locals.FULLNAME){ %>
+  <h2>Your full name is <%= FULLNAME %></h2>
+  <% } %>
+</div> -->
+<!--name display on website homepage ended-->
+
+<!--Flex box to display all my posts-->
+
+<!-- Main ends here -->
+<%- include('partials/footer.ejs') %>

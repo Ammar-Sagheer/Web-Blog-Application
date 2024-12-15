@@ -1,0 +1,7 @@
+# Ignore all HTML files:
+**/*.html
+**/views/partials
+**/*.ejs
+
+# Ignore artifacts:
+**/views/partials/header.ejs

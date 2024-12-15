@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+<!-- Main starts here -->
+<div class="container">
+  <form action="/create-blog" method="POST">
+    <h1>Please write your blog below:</h1>
+    <div class="info blogArea">
+      <input class="fname" type="text" name="name" placeholder="Blog Title" />
+    </div>
+
+    <div class="blogArea">
+      <textarea
+        rows="12"
+        cols="50"
+        name="blog"
+        placeholder="Write your blog here and press submit button!"
+      ></textarea>
+    </div>
+    <button type="submit">Create Blog</button>
+  </form>
+</div>
+<!-- Main ends here -->
+<%- include('partials/footer.ejs') %>
